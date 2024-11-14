@@ -104,7 +104,7 @@ entry_azienda = tk.Entry(root)
 entry_azienda.pack(padx=20, pady=10)
 
 # Bottone per generare il POS
-btn_genera_pos = tk.Button(root, text="Genera POS")
+btn_genera_pos = tk.Button(root, text="Genera POS", command=genera_pos)
 btn_genera_pos.pack(padx=20, pady=20)
 
 # Avvio dell'interfaccia grafica
