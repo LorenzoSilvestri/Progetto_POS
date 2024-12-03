@@ -103,6 +103,30 @@
         .page-break {
             page-break-before: always; /* Forza una nuova pagina prima di questo elemento */
         }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 770px;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flex-item {
+            flex: 1 1 calc(32% - 20px);
+            padding: 15px;
+            align-items: center;       /* Allinea al centro verticalmente */
+            justify-content: center;   /* Allinea al centro orizzontalmente */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+       
+        .section {
+            margin-bottom: 30px;
+        }
+        .block.full-width {
+            width: 100%;              /* Occupa l'intera larghezza */
+        }
     </style>
 </head>
 <body>
@@ -403,7 +427,138 @@
         </tr>
     </table>
     <div class = "page-break "></div>      
-  
+    <table>
+        <tr>
+            <th colspan="2"> Impresa Esecutrice </th>
+        </tr>
+        <tr>
+            <td> Ragione Sociale </td>
+            <td> Frazione Valli di Lisciano ecc... </td>
+        </tr>
+        <tr>
+            <td> Sede dell'Azienda</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> Codice Fiscale / P.IVA</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> Numero REA </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> Recapito telefonico </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> PEC </td>
+            <td> </td>
+        </tr>
+    </table> 
+    <!-- Sezione Organigramma -->
+    <div class="section">
+            <span style = "text-align: center;">
+                <h2>Organigramma Aziendale</h2>
+            </span>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Datore di Lavoro</h3>
+                <p>Moreschini Dario</p>
+            </div>
+            <div class="flex-item">
+                <h3>Responsabile Servizio Prevenzione <br> e Protezione</h3>
+                <p>Moreschini Dario</p>
+            </div>
+            <div class="flex-item">
+                <h3>Sorveglianza Sanitaria (Medico Competente)</h3>
+                <p>Dott. Degli Angioli Rolando</p>
+            </div>
+            <div class="flex-item">
+                <h3>Rappresentante dei Lavoratori per la  <br> Sicurezza Territoriale</h3>
+                <p>R.L.S.T.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Addetti Servizio Primo Soccorso</h3>
+                <p>Moreschini Davide </p>
+            </div>
+            <div class="flex-item">
+                <h3>Addetti Squadra Gestione Emergenze - Evacuazione</h3>
+                <p>-</p>
+            </div>
+            <div class="flex-item">
+                <h3>Dirigente</h3>
+                <p>-</p>
+            </div>
+            <div class="flex-item">
+                <h3>Lavoratori</h3>
+                <p>-</p>
+            </div>
+            <div class="flex-item">
+                <h3>Preposto</h3>
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+    <div class = "page-break"> </div>
+    <div class = "container">
+        <span style = "font-size: 18px;">
+            SEZIONE 3 - PROCEDURE DI EMERGENZA
+        </span>
+    </div> 
+    <div>
+        <p>
+            In un punto ben visibile appendere la seguente tabella con i numeri di telefono utili in caso di emergenza o di necessità:
+        </p> 
+    </div>
+    <table>
+        
+        <tr>
+            <td style = "text-align: center;"> POLIZIA  </td>
+            <td style = " text-align: center;"> 
+                NUMERO UNICO EMERGENZE 112 
+                <br>
+                <img style = "height: 80px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\polizia_112.jpg" alt="Polizia 112">
+            </td>
+        </tr>
+        <tr>
+            <td style = "text-align: center;"> CARABINIERI </td>
+            <td style = "text-align: center;"> 
+                NUMERO UNICO EMERGENZE 112
+                <br>
+                <img style = "height: 80px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\carabinieri_112.jpg" alt="Carabineri 112">
+                <br>
+                Caserma Carabinieri 
+            </td>
+        </tr>
+        <tr>
+            <td style = "text-align: center;"> PRONTO SOCCORSO <br> AMBULENZE/OSPEDALE </td>
+            <td style = "text-align: center;"> 
+                NUMERO UNICO EMERGENZE 112 
+                <br>
+                <img style = "height: 80px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\pronto_soccorso_118.jpg" alt="Pronto Soccorso 118">
+            </td>
+        </tr>
+        <tr>
+            <td style = "text-align: center;"> VIGILI DEL FUOCO VV. FF. </td>
+            <td style = "text-align: center;"> 
+                NUMERO UNICO EMERGENZE 112
+                <br>
+                <img style = "height: 80px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\vigili_115.jpg" alt="Vigili del Fuoco 115">
+            </td>
+        </tr>
+        <tr>
+            <td style = "text-align: center;"> POLIZIA MUNICIPALE <br> COMUNE DI APPIGNANO DEL TRONTO </td>
+            <td style="text-align: center;"> 
+                NUMERO PRONTO INTERVENTO <br>  
+                0736-817724
+                <br>
+                <img style = "height: 80px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\polizia_municipale.png" alt="Polizia Municipale ">
+            </td>
+        </tr>
+    </table>
+
+
 
 <h2>PER I CANTIERI TEMPORANEI O MOBILI</h2>
 <p>(D. Lgs. 81/2008)</p>
