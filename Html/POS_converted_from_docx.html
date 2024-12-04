@@ -56,8 +56,19 @@
 
         /* Stile per il testo */
         .container p {
-            font-size: 16px;           /* Dimensione del testo */
+            font-size: 14px;           /* Dimensione del testo */
             color: #333;               /* Colore del testo */
+        }
+
+        .container_elenco_img {
+            display: flex;
+            align-items: flex-start; /* Allinea immagine ed elenco in alto */
+        }
+
+        .list-wrapper {
+            display: flex;
+            flex-direction: column; /* Forza la lista a occupare l'intero spazio verticale */
+            justify-content: center; /* Allinea verticalmente la lista rispetto all'immagine */
         }
 
         .left-text {
@@ -90,14 +101,22 @@
         table, th, td {
             border: 1px solid #ccc;
             padding: 10px; 
+            font-size: 14px;
         }
         th, td {
             border: 1px solid #ddd;    /* Bordi sottili */
-            padding: 10px; 
+            padding: 5px; 
+            font-size: 14px;
+            line-height: 1; /* Altezza della linea compatta */
         }
         ul {
             list-style-type: disc;
             margin-left: 20px;
+            margin: 0; 
+            font-size: 14px;
+        }
+        li{
+            margin-bottom: 0%; /* Spaziatura tra elementi dell'elenco */
         }
 
         .page-break {
@@ -502,7 +521,7 @@
     </div>
     <div class = "page-break"> </div>
     <div class = "container">
-        <span style = "font-size: 18px;">
+        <span style = "font-size: 18px; ">
             SEZIONE 3 - PROCEDURE DI EMERGENZA
         </span>
     </div> 
@@ -512,18 +531,17 @@
         </p> 
     </div>
     <table>
-
         <tr>
-            <td style = "text-align: center;"> POLIZIA  </td>
-            <td style = " text-align: center;"> 
+            <td style = "text-align: center; line-height: 2;"> POLIZIA  </td>
+            <td style = " text-align: center;  line-height: 2; "> 
                 NUMERO UNICO EMERGENZE 112 
                 <br>
                 <img style = "height: 75px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\polizia_112.jpg" alt="Polizia 112">
             </td>
         </tr>
         <tr>
-            <td style = "text-align: center;"> CARABINIERI </td>
-            <td style = "text-align: center;"> 
+            <td style = "text-align: center; line-height: 2;"> CARABINIERI </td>
+            <td style = "text-align: center; line-height: 2;"> 
                 NUMERO UNICO EMERGENZE 112
                 <br>
                 <img style = "height: 75px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\carabinieri_112.jpg" alt="Carabineri 112">
@@ -532,28 +550,28 @@
             </td>
         </tr>
         <tr>
-            <td style = "text-align: center;"> PRONTO SOCCORSO <br> AMBULENZE/OSPEDALE </td>
-            <td style = "text-align: center;"> 
+            <td style = "text-align: center; line-height: 2;"> PRONTO SOCCORSO <br> AMBULENZE/OSPEDALE </td>
+            <td style = "text-align: center; line-height: 2;"> 
                 NUMERO UNICO EMERGENZE 112 
                 <br>
                 <img style = "height: 75px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\pronto_soccorso_118.jpg" alt="Pronto Soccorso 118">
             </td>
         </tr>
         <tr>
-            <td style = "text-align: center;"> VIGILI DEL FUOCO VV. FF. </td>
-            <td style = "text-align: center;"> 
+            <td style = "text-align: center; line-height: 2;"> VIGILI DEL FUOCO VV. FF. </td>
+            <td style = "text-align: center; line-height: 2;"> 
                 NUMERO UNICO EMERGENZE 112
                 <br>
                 <img style = "height: 75px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\vigili_115.jpg" alt="Vigili del Fuoco 115">
             </td>
         </tr>
         <tr>
-            <td style = "text-align: center;"> POLIZIA MUNICIPALE <br> COMUNE DI APPIGNANO DEL TRONTO </td>
-            <td style="text-align: center;"> 
+            <td style = "text-align: center; line-height: 2;"> POLIZIA MUNICIPALE <br> COMUNE DI APPIGNANO DEL TRONTO </td>
+            <td style="text-align: center; line-height: 2;"> 
                 NUMERO PRONTO INTERVENTO <br>  
                 0736-817724
                 <br>
-                <img style = "height: 75px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\polizia_municipale.png" alt="Polizia Municipale ">
+                <img style = "height: 70px; align-items: center;"   src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\polizia_municipale.png" alt="Polizia Municipale ">
             </td>
         </tr>
     </table>
@@ -566,7 +584,7 @@
             PROCEDURE DI EMERGENZA
             <br> 
         </h2>
-        <p>
+        <p style="font-size: 14px; line-height: 1;">
             Nel cantiere dovranno sempre essere presenti gli addetti al pronto soccorso, alla prevenzione incendi ed alla
             evacuazione, che dovranno essere indicati nella sezione specifica del POS dell'Impresa Affidataria. <br> 
             <br> 
@@ -583,13 +601,13 @@
         <h2 style="text-align: center;">
             CHIAMATA SOCCORSI ESTERNI 
         </h2>
-        <p style = "color: red; text-decoration: underline; font-size: 20px;"> 
+        <p style = "color: red; text-decoration: underline; font-size: 20px; line-height: 1;"> 
             IN CASO D'INCENDIO VIGILI DEL FUOCO 115
         </p> 
-        <ul>
+        <ul style="line-height: 1;">
             <li> Chiamare i vigili del fuoco telefonando al 115.</li>
             <li> Rispondere con calma alle domande dell'operatore dei vigili del fuoco che richiederà:
-                <ul>
+                <ul style="line-height: 1;">
                     <li> <b> indirizzo e telefono del cantiere</b></li>
                     <li><b>informazioni sull'incendio</b></li>
                 </ul>
@@ -598,6 +616,343 @@
             <li>Attendere i soccorsi esterni al di fuori del cantiere.</li>
         </ul>
     </div> 
-
+    <div>
+        <p style = "color: red; text-decoration: underline; font-size: 20px;">
+            IN CASO D'INFORTUNIO O MALORE PRONTO SOCCORSO AMBULANZE OSPEDALE 118
+        </p>
+        <ul style="line-height: 1;">
+            <li>
+                Chiamare il SOCCORSO PUBBLICO componendo il numero telefonico 118
+            </li>
+            <li>
+                Rispondere con calma alle domande dell'operatore che richiederà:
+                <ul style="line-height: 1;">
+                    <li>
+                        <b> cognome e nome</b>
+                    </li>
+                    <li>
+                        <b> indirizzo, n. telefonico ed eventuale percorso per arrivarci</b>
+                    </li>
+                    <li>
+                        <b> tipo di incidente: descrizione sintetica della situazione, numero dei feriti ecc.</b>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Conclusa la telefonata, lasciare libero il telefono: potrebbe essere necessario richiamarvi.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p style = "font-size: 20px; line-height: 1;">
+            REGOLE COMPORTAMENTALI
+        </p>
+        <ul style="line-height: 1;">
+            <li>
+                Seguire i consigli dell'operatore della Centrale Operativa 118.
+            </li>
+            <li>
+                Osservare bene quanto sta accadendo per poterlo riferire.
+            </li>
+            <li>
+                Prestare attenzione ad eventuali fonti di pericolo (rischio di incendio, ecc.).
+            </li>
+            <li>
+                Incoraggiare e rassicurare il paziente.
+            </li>
+            <li>
+                Inviare, se del caso, una persona ad attendere l'ambulanza in un luogo facilmente individuabile.
+            </li>
+            <li>
+                Assicurarsi che il pericolo per l'accesso della lettiga sia libero da ostacoli.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p style = "font-size: 20px;">
+            CASSETTA DI PRONTO SOCCORSO
+        </p>
+        <p>
+            Sul cantiere sarà presente <b>  almeno una cassetta di primo soccorso</b> contenente il seguente materiale:
+        </p>
+        <div class="container_elenco_img">
+            <div class="list-wrapper">
+                <ul style = "font-size: 12px; line-height: 1;">
+                    <li>
+                        Guanti sterili monouso (n.5 paia).
+                    </li>
+                    <li>
+                        Visiera para schizzi (n.1).
+                    </li>
+                    <li>
+                        Flacone di soluzione cutanea di iodopovidone al 10% di iodio da 125 ml (n.1).
+                    </li>
+                    <li>
+                        Flacone di soluzione fisiologica (sodio cloruro 0,9%) da 250 ml (n.3).
+                    </li>
+                    <li>
+                        Compresse di garza sterile 18 x 40 in buste singole (n.3).
+                    </li>
+                    <li>
+                        Compresse di garza sterile 10 x 10 in buste singole (n.10).
+                    </li>
+                    <li>
+                        Teli sterili monouso (n.2)
+                    </li>
+                    <li>
+                        Pinzette da medicazione sterili monouso (n.2).
+                    </li>
+                    <li>
+                        Confezione di rete elastica di misura media (n.1).
+                    </li>
+                    <li>
+                        Confezione di cotone idrofilo (n.1).
+                    </li>
+                    <li>
+                        Confezione di cerotti di varie misure pronti all'uso (n.2).
+                    </li>
+                    <li>
+                        Rotolo di cerotto alto cm 2,5 (n.2).
+                    </li>
+                    <li>
+                        Paio di forbici (n.1).
+                    </li>
+                    <li>
+                        Laccio emostatico (n.3).
+                    </li>
+                    <li>
+                        Confezione di ghiaccio pronto uso (n.2).
+                    </li>
+                    <li>
+                        Sacchetti monouso per la raccolta di rifiuti sanitari (n.2).
+                    </li>
+                    <li>
+                        Termometro (n.1).
+                    </li>
+                    <li>
+                        Apparecchio per la misurazione della pressione arteriosa (n.1).
+                    </li>
+                    <li>
+                        Istruzioni sul modo di usare i presidi suddetti e di prestare i primi soccorsi in attesa del servizio di emergenza.
+                    </li>
+                </ul>
+            </div>
+            <img src=" C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\cassetta_pronto_soccorso.jpg" alt="Cassetta Pronto Soccorso" style = "height: 160px; margin-top: 45px;">
+        </div>
+        <div>
+            <p style = "font-size: 20px;">
+                MEZZI DI ESTINZIONE
+            </p> 
+            <div class="container_elenco_img">
+                <div class="list-wrapper">
+                    <p style="line-height: 1;">
+                        In cantiere saranno presenti idonei mezzi di estinzione e personale formato, informato e addestrato per le emergenze antincendio,
+                    lotta antincendio, evacuazione e per tutte le altre emergenze.
+                    </p>
+                    <p style = "font-size: 20px; text-align: center; line-height: 1;">
+                        NORME GENERALE DI COMPORTAMENTO IN CASO DI EMERGENZA
+                    </p> 
+                    <p style = "font-size: 16px; color: green; line-height: 1; ">
+                        INCENDIO
+                    </p> 
+                    
+                </div>
+                <img src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\estintore.jpg" alt="estintore" style = "height: 100px;">
+                <img src="C:\Users\Utente\Desktop\Progetto POS\Html\Immagini\guida_scelta_estintore.jpg" alt="Guida Scelta" style = "height: 200px;">
+            </div>
+            <ul style="line-height: 1;">
+                <li>
+                    Seguire le indicazioni degli addetti all'emergenza e degli operatori esterni eventuali
+                </li>
+                <li>
+                    Non mettete in alcun modo a rischio la vostra incolumità alle disposizioni impartite per il vostro ambiente
+                    di lavoro, allontanarsi al più presto dalla zona dell'incendio, non usare ascensori (se presenti)
+                </li>
+                <li>
+                    In caso di fumo camminare carponi, vicino al pavimento, con un fazzoletto bagnato sulla bocca e sul naso 
+                </li>
+                <li>
+                    Intervenire solo se possibile e senza correre alcun rischio per la propria incolumità
+                </li>
+                <li>
+                    Spostarsi lungo i muri se la visibilità è scarsa
+                </li>
+                <li>
+                    In caso di fuoco all'esterno del locale in cui ci si trova: chiudersi dentro, sigillare ogni fessuraper evitare
+                    l'ingresso di fumo ed avvisare e segnalare la propria presenza
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                EVACUAZIONE
+            </p> 
+            <ul style = "line-height: 1;">
+                <li>
+                    Avviarsi verso l'uscita di emergenza più vicina, seguendo le indicazioni fornite dagli addetti e aiutare 
+                eventuali persone in difficoltà e portatori di handicap
+                </li>
+                <li>
+                    Raggiungere il luogo di raccolta esterno
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                EMERGENZA DOVUTA AD AGGRESSIONE A DIPENDENTI
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    Restate calmi, tenersi alla larga dall'aggressore, specie se brandisce armi proprie od improprie
+                </li>
+                <li>
+                    Cercare di calmare l'aggressore con parole accomodanti, senza mettervi a discutere con lui e soprattutto senza
+                    contestare le sue dichiarazioni
+                </li>
+                <li>
+                    Rassicurarlo sul fatto che tutto si può accomodare ed informarlo che avete già avvertito il datore di lavoro, che sta
+                    inviando qualcuno per esaminare le sue ragioni
+                </li>
+                <li>
+                    Non cercare di intervenire direttamente, per evitare possibili pericolose reazioni, di cui potrebbe restare
+                    vittima l'aggredito o l'eventuale ostaggio 
+                </li>
+                <li>
+                    Cercare di far parlare in continuazione l'aggressore, fino all'arrivo delle forze dell'ordine
+                </li>
+                <li>
+                    Un aggressore che parla, di solito, non commette atti irrimediabili
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                EMERGENZA PER INCIDENTE/INFORTUNIO
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    Avvisare gli addetti al pronto soccorso dell'edificio se i danni alla/e persona/e appaiono limitati 
+                </li>
+                <li>
+                    Se entro pochi minuti dalla chiamata non interviene nessuno chiamare il pronto intervento esterno
+                </li>
+                <li>
+                    Se possibile assistere la/e persona/e fino all'arrivo dei soccorsi e/o dell'addetto al pronto Soccorso
+                </li>
+                <li>
+                    Collaborare con gli eventuali operatori esterni di pronto soccorso
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                TERREMOTO
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    Alle eventuali prime scosse telluriche anche di lieve intesità è necessario portarsi fuori dall'edificio, 
+                    anche senza la segnalazione da parte degli addetti all'emergenza
+                </li>
+                <li>
+                    Una volta fuori dallo stabile, allontanarsi da questo e da altri vicini e portarsi in ampi piazzali, lontano
+                    da alberi ad alto fusto e linee elettriche 
+                </li>
+                <li>
+                    Nel caso le scosse fossero subito violente, tanto da non permettere l'evacuazione dello stabile, non sostare al centro
+                    degli ambienti e raggrupparsi vicino alle pareti od in aree d'angolo con maggiore resistenza presunta o sotto tavoli
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                BLACK OUT
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    Muoversi lentamente, non correre onde evitare cadute
+                </li>
+                <li>
+                    Seguire le luci d'emergenza e portarsi verso le zone di raccolta
+                </li>
+                <li>
+                    Attenersi alle istruzioni degli addetti all'emergenza
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                ALLUVIONE
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    Nei locali minacciati dall'acqua si dovrà chiudere la valvola del gas e staccare la corrente elettrica, ma non bisogna eseguire
+                tale operazione se il luogo in cui si trova l'interruttore generale è già inondato
+                </li>
+                <li>
+                    Se l'edificio è a più piani e l'acqua impedisce di uscire perchè il livello è ormai molto alto, rifugiatevi ai piani più alti o,
+                    eventualmente, sul tetto.
+                </li>
+                <li>
+                    Rinunciate a mettere in salvo qualunque bene o materiale e trasferitevi subito in ambiente sicuro ma, se ciò non compromette la vostra 
+                    incolumità, mettete in un luogo sicuro le sostanze che potrebbero essere fonte di inquinamento
+                </li>
+                <li>
+                    Se l'acqua potabile presenta odore, colore o gusto che inducono a credere che sia contaminata, non utilizzarla sino a quando non sarà 
+                    dichiarata potabile
+                </li>
+                <li>
+                    Non somministrare alimenti e farmaci esposti all'inondazione, in quanto potrebbero contenere agenti patogeni o essere contaminati
+                </li>
+                <li>
+                    Non usare il telefono se non per casi di effettiva necessità
+                </li>
+                <li>
+                    Se siete all'esterno, non tentate di raggiungere la vostra destinazione, ma cercate riparo presso il luogo più stabile 
+                    e sicuro 
+                </li>
+            </ul>
+            <p style = "font-size: 16px; color: green; line-height: 1; ">
+                EMERGENZE DI PRIMO SOCCORSO 
+            </p>
+            <p style = "line-height: 1;">
+                Di seguito sono indicati i comportamenti da attuare in caso di:
+            </p>
+            <ul style = "line-height: 1;">
+                <li>
+                    emorragie;
+                </li>
+                <li>
+                    folgorazione;
+                </li>
+                <li>
+                    lesioni da caldo e da freddo;
+                </li>
+                <li>
+                    colpo di calore;
+                </li>
+                <li>
+                    colpo di sole;
+                </li>
+                <li>
+                    congelamento;
+                </li>
+                <li>
+                    assideramento;
+                </li>
+                <li>
+                    shock anafilattico;
+                </li>
+                <li>
+                    punture e morsi di animali;
+                </li>
+                <li>
+                    traumi oculari;
+                </li>
+                <li>
+                    intossicazione da agenti chimici;
+                </li> 
+                <li>
+                    lavori in quota;
+                </li>
+                <li>
+                    lavori in spazi confinati o sospetti di inquinamento.
+                </li>
+            </ul>
+        </div>
+        <div>
+           <h2 style="text-align: center; font: 20px; color: rgb(103, 103, 211); text-decoration: underline;">
+                EMORRAGIE
+           </h2> 
+        </div>
+    </div>
+    
 </body>
 </html>
